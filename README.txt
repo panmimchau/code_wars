@@ -1,0 +1,1 @@
+a collection of exercises and tasks from codewars.com
