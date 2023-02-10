@@ -2,28 +2,25 @@
 
 If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative."""
 
-# answer: 
-def find_next_square(sq):
 
-    perf_sq = sq ** (1/2)
+# answer:
+def find_next_square(sq):
+    perf_sq = sq ** (1 / 2)
 
     if perf_sq == int(perf_sq):
         return (perf_sq + 1) ** 2
     else:
         return -1
 
+
 # test:
 def test_find_next_square():
-    #given
+    # given
     sq = 121
 
-    #when
+    # when
     result = find_next_square(sq)
 
-    #then
+    # then
     assert result == 144
     assert find_next_square(625) == 676
-
- 
-    
- 

@@ -13,27 +13,24 @@ Rules:
     You will only be given Natural Numbers as arguments.
 """
 
-# answer: 
+
+# answer:
 def series_sum(n):
     fractions = []
-    for n in range(1, 3*n - 1, 3):
-        fractions.append(1/n)
+    for n in range(1, 3 * n - 1, 3):
+        fractions.append(1 / n)
     return "{:.2f}".format(sum(fractions))
+
 
 # test:
 def test_series_sum():
-    #given
+    # given
     n = 2
 
-    #when
+    # when
     result = series_sum(n)
 
-    #then
-    assert result == '1.25'
-    assert series_sum(1) == '1.00'
-    assert series_sum(3) == '1.39'
-
-
- 
-    
- 
+    # then
+    assert result == "1.25"
+    assert series_sum(1) == "1.00"
+    assert series_sum(3) == "1.39"
